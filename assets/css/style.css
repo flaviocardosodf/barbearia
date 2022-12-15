@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+nav {
+
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+nav img {
+    height: 6em;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: inherit;
+    transition: .8s;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: #888;
+}
+
+.tituloContainer {
+    height: 40em;
+    background: rgba(17, 17, 17, 0.3);
+    background-image: url(../img/bg1.jpeg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: end;
+    margin: 2em
+}
+
+.logo img {
+    width: 25%;
+}
+
+.hTitulo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.hTitulo h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 2em;
+}
+
+.hTitulo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: right;
+    margin: 0.5em 1em 0 0;
+}
+
+.bemVindo{
+    background:#f8fbf6;
+    display: flex;
+    flex-direction: row;
+    padding: 3em 4em;
+}
+
+.bemVindoTexto {
+    width: 39%;
+}
+
+.bemVindoTexto h5, .bemVindoContato h5 {
+    text-transform: uppercase;
+    color: #AE7B5B;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.bemVindoTexto h3, .bemVindoContato h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 1em 0;
+    color: #111;
+}
+
+.bemVindoTexto hr, .bemVindoContato hr, .estiloTexto hr {
+    border: 1px solid #AE7B5B;
+    margin: 1em 0;
+}
+
+.bemVindoTexto p {
+    text-align: justify;
+    line-height: 2;
+    margin-bottom: 1em;
+}
+
+.bemVindoImagem {
+    width: 29%;
+    margin: 0 1.5%;
+}
+
+.bemVindoImagem img {
+    width: 100%;
+}
+
+.bemVindoContato {
+    width: 29%;
+}
+
+.contatoHorario {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.contatoHorario p {
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.horarioDia {
+    font-weight: bold;
+}
+
+.bemVindoContato li {
+    line-height: 1.5;
+}
+
+.bemVindoContato li::before{
+    content: "*";
+    margin-right: .5em;
+}
+
+.fotosContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 3em 4em;
+    align-items: top;
+    justify-content: center;
+}
+
+.galeria h5 {
+    text-transform: uppercase;
+    color: #AE7B5B;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.galeria h2 {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.colunaExterna, .colunaInterna {
+    width: 33%;
+    text-align: center;
+}
+
+.colunaExterna img, .colunaInterna img {
+    width: 90%;
+    margin: 1em;
+}
+
+.sobre {
+    background-color: #D7DBD6;
+    background: rgba(17, 17, 17, 0.3);
+    background-image: url(../img/marca_dagua.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40em;
+    padding: 3em 4em;
+}
+
+.sobre h5 {
+    text-transform: uppercase;
+    color: #AE7B5B;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 2em 0;   
+}
+
+.sobre h2 {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sobreTexto {
+    display: flex;
+}
+
+.paragrafo {
+    width: 50%;
+    font-weight: 500;
+    line-height: 2;
+    margin: 2em 1em;
+}
+
+.especialistas {
+    padding: 3em 4em;
+    display: flex;
+    position: relative;
+}
+
+.textContainer {
+    background: rgba(17, 17, 17, 0.8);
+    width: 45%;
+    padding: 2em;
+    outline: 1px solid #fff;
+    outline-offset: -1em;
+    position: absolute;
+    top: 45%;
+}
+
+.textContainer h5 {
+    text-transform: uppercase;
+    color: #AE7B5B;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 2em 0 1em 0;
+}
+
+.textContainer h2 {
+    text-transform: uppercase;
+    color: #f8fbf6;
+    font-size: 2em;
+    font-weight: bold;
+    margin: .8em 0;
+}
+
+.textContainer p {
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.imgContainer img {
+    width: 55%;
+    text-align: center;
+    position: relative;
+    left: 25%;
+}
+
+.imgPerfil img {
+    width: 25%;
+    outline: 1px solid #111;
+    outline-offset: 1em;  
+    position: relative;
+    left: 70%;
+    bottom: 10%;  
+}
+
+.estilo {
+    background-color: #f8fbf6;
+    padding: 3em 4em;
+}
+
+.estiloContainer {
+    display: flex;
+}
+
+.estiloImg {
+    width: 47%;
+    margin-right: 6%;
+}
+
+.estiloTexto {
+    width: 47%;
+}
+
+.estiloTexto h5 {
+    text-transform: uppercase;
+    color: #AE7B5B;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.estiloTexto h2 {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.estiloTexto p {
+    line-height: 2;
+}
+
+.estiloImg img {
+    width: 100%;
+}
+
+.barbeiros {
+    background-color: #D7DBD6;
+    padding: 3em 4em;
+}
+
+.barbeiros h5 {
+    text-transform: uppercase;
+    color: #AE7B5B;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.barbeiros h2 {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.barbeirosContainer {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.cardBarbeiro {
+    background-color: #f8fbf6;
+    padding: 3em;
+    width: 30%;
+    margin: 0 1%;
+}
+
+.cardBarbeiro img {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.cardBarbeiro h4 {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.avaliacao {
+    padding: 3em 4em;
+    background: rgba(17, 17, 17, 0.5);
+    background-image: url(../img/55390c401ff0cc160c54045570f36afa.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.avaliacaoConntainer {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    align-items: center;
+    padding: 1em;
+    outline: 1px solid #fff;
+    outline-offset: 2em;  
+}
+
+.avaliacaoConntainer h2 {
+    text-transform: uppercase;
+    color: #111;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.avaliacaoConntainer p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 2em 0;
+}
+
+footer img {
+    width: 10%;
+}
+
+footer ul {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 1em .5em;
+}
+
+footer a {
+    color: #f8fbf6;
+    font-size: 1em;
+}
